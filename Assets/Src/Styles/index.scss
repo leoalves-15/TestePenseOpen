@@ -1,0 +1,56 @@
+$primary-green: #079D56;
+$second-green: #006B3F;
+$withe-text : #ffffff;
+@mixin Call-To-Action($text-color, $line-height, $weight) {
+    color: $text-color;
+    font-size: 18px;
+    line-height: $line-height;
+    font-weight: $weight;
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.Container-All{
+    width: 100vw;
+}
+.Contain-All{
+    width: 100%;
+}
+.Container-Banner, Container-Navigation, 
+.Container-Value, .Container-Space, .Container-vacancies,Container-explore-opportunities{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Container-Header{
+    z-index: 9999;
+    height: 90px;
+    position: absolute;
+}
+.Container-Banner{
+    align-items: flex-end;
+    top:0;
+    .Banner{
+        width: 100%;
+        height: 256px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../Images/BannerMobile.png");
+        border-radius: 0 0 0 24px;
+    }
+    .Text-Banner{
+        display: flex;
+        align-items: center;
+        width: 336px;
+        height: 96px;
+        margin-top: calc(-96px/2);
+        border-radius: 16px 0 0 16px;
+        background: linear-gradient(225deg, $primary-green 0%, $second-green 100%);
+        h1{
+            @include Call-To-Action(#ffffff, 22px, bold);
+            margin-left: 16px;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.Container-All {
+  width: 100vw;
+}
+
+.Contain-All {
+  width: 100%;
+}
+
+.Container-Banner, Container-Navigation,
+.Container-Value, .Container-Space, .Container-vacancies, Container-explore-opportunities {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Container-Header {
+  z-index: 9999;
+  height: 90px;
+  position: absolute;
+}
+
+.Container-Banner {
+  align-items: flex-end;
+  top: 0;
+}
+.Container-Banner .Banner {
+  width: 100%;
+  height: 256px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../Images/BannerMobile.png");
+  border-radius: 0 0 0 24px;
+}
+.Container-Banner .Text-Banner {
+  display: flex;
+  align-items: center;
+  width: 336px;
+  height: 96px;
+  margin-top: -48px;
+  border-radius: 16px 0 0 16px;
+  background: linear-gradient(225deg, #079D56 0%, #006B3F 100%);
+}
+.Container-Banner .Text-Banner h1 {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  font-style: normal;
+  margin-left: 16px;
+}
+
+/*# sourceMappingURL=index.css.map */
