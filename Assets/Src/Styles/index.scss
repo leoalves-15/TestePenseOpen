@@ -11,7 +11,7 @@ $black-text : #242625;
     font-weight: $weight;
     font-style: normal;
 }
-@mixin text {
+@mixin text (){
     font-family: Averta Std;
     font-style: normal;
     font-weight: normal;
@@ -32,6 +32,13 @@ $black-text : #242625;
     line-height: 16px;
     font-style: normal;
     color: white;
+}
+@mixin inputs {
+    border: 2px solid #5D615F;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 312px;
+    height: 40px;
 }
 *{
     padding: 0;
@@ -105,6 +112,37 @@ $black-text : #242625;
     }
     .Container-cta-vacancies{
         button{
+            @include buttons();
+        }
+    }
+
+}
+.Container-Vacancies{
+    margin-top: 40px;
+    > h2{
+        @include Call-To-Action($black-text, 22px, 700 );
+        margin-bottom: 4px;
+    }
+    > p{
+        @include text();
+        margin-bottom: 16px;
+    }
+    .form{
+        .Form-Row{
+            margin-bottom: 16px;
+            > input, > select{
+                @include inputs();
+            }
+            > label{
+                @include Call-To-Action($black-text, 24px, 700 );
+                margin-bottom: 4px;
+            }
+        }
+    }
+    .Container-Vacancies-CTA{
+        display: flex;
+        justify-content: center;
+        > button{
             @include buttons();
         }
     }
