@@ -1,4 +1,5 @@
 * {
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
 }
@@ -32,7 +33,8 @@
   width: 100%;
   height: 256px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position-y: center;
+  background-size: cover;
   background-image: url("../Images/BannerMobile.png");
   border-radius: 0 0 0 24px;
 }
@@ -58,6 +60,9 @@
 
 .Container-contents {
   margin: 24px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .Container-explore-opportunities .Container-cta-Career {
@@ -87,65 +92,6 @@
   margin: 8px 0px 24px 0px;
 }
 .Container-explore-opportunities .Container-cta-vacancies button {
-  font-family: Averta Std;
-  padding: 0px 16px;
-  width: 146px;
-  height: 48px;
-  background: #006B3F;
-  border-radius: 8px;
-  border: none;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 16px;
-  font-style: normal;
-  color: white;
-}
-
-.Container-Vacancies {
-  margin-top: 40px;
-}
-.Container-Vacancies > h2 {
-  font-family: Averta Std;
-  color: #242625;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 700;
-  font-style: normal;
-  margin-bottom: 4px;
-}
-.Container-Vacancies > p {
-  font-family: Averta Std;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: #242625;
-  margin-bottom: 16px;
-}
-.Container-Vacancies .form .Form-Row {
-  margin-bottom: 16px;
-}
-.Container-Vacancies .form .Form-Row > input, .Container-Vacancies .form .Form-Row > select {
-  border: 2px solid #5D615F;
-  box-sizing: border-box;
-  border-radius: 8px;
-  width: 312px;
-  height: 40px;
-}
-.Container-Vacancies .form .Form-Row > label {
-  font-family: Averta Std;
-  color: #242625;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  font-style: normal;
-  margin-bottom: 4px;
-}
-.Container-Vacancies .Container-Vacancies-CTA {
-  display: flex;
-  justify-content: center;
-}
-.Container-Vacancies .Container-Vacancies-CTA > button {
   font-family: Averta Std;
   padding: 0px 16px;
   width: 146px;
@@ -229,6 +175,136 @@
   font-size: 14px;
   line-height: 21px;
   color: #242625;
+}
+
+.Container-Space .Conter-Slider {
+  margin-top: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Container-Space .Conter-Slider .Container-Slide {
+  display: flex;
+  position: relative;
+  width: 312px;
+}
+.Container-Space .Conter-Slider .Container-Slide > button {
+  width: 48px !important;
+  height: 48px !important;
+  position: absolute;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  top: calc(50% - 24px);
+}
+.Container-Space .Conter-Slider .Container-Slide > button:first-child {
+  background-image: url(../Images/left.svg) !important;
+  font-family: Averta Std;
+  padding: 0px 16px;
+  width: 146px;
+  height: 48px;
+  background: #006B3F;
+  border-radius: 0 8px 8px 0;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  color: white;
+  left: 0;
+}
+.Container-Space .Conter-Slider .Container-Slide > button:last-child {
+  background-image: url(../Images/right.svg) !important;
+  font-family: Averta Std;
+  padding: 0px 16px;
+  width: 146px;
+  height: 48px;
+  background: #006B3F;
+  border-radius: 8px 0px 0 8px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  color: white;
+  right: 0;
+}
+.Container-Space .Conter-Slider .Container-Slide .Slide {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+}
+.Container-Space .Conter-Slider .Container-Slide .Slide .Slide-Item {
+  background-image: url("../Images/ImagemSlide.png");
+  scroll-snap-align: start;
+  border-radius: 16px;
+  width: 312px;
+  height: 176px;
+  min-height: 176px;
+  min-width: 312px;
+}
+
+.Container-Vacancies {
+  margin-top: 40px;
+}
+.Container-Vacancies > h2 {
+  font-family: Averta Std;
+  color: #242625;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 4px;
+}
+.Container-Vacancies > p {
+  font-family: Averta Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #242625;
+  margin-bottom: 16px;
+}
+.Container-Vacancies .form .Form-Row {
+  margin-bottom: 16px;
+}
+.Container-Vacancies .form .Form-Row > input, .Container-Vacancies .form .Form-Row > select {
+  border: 2px solid #5D615F;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 312px;
+  height: 40px;
+}
+.Container-Vacancies .form .Form-Row > label {
+  font-family: Averta Std;
+  color: #242625;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 4px;
+}
+.Container-Vacancies .Container-Vacancies-CTA {
+  display: flex;
+  justify-content: center;
+}
+.Container-Vacancies .Container-Vacancies-CTA > button {
+  font-family: Averta Std;
+  padding: 0px 16px;
+  width: 146px;
+  height: 48px;
+  background: #006B3F;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

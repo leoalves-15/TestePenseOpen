@@ -14,7 +14,7 @@
                 <img src="./Assets/Src/Images/Logo.png" alt="">
             </header>
             <div class="Container-Banner">
-                <div class="Banner">teste</div>
+                <div class="Banner"></div>
                 <div class="Text-Banner"> <h1>Trabalhe conosco nessa transformação</h1></div>
             </div>
             <div class="Container-Navigation">
@@ -47,7 +47,9 @@
                             <input type="radio" name="accordion" checked="checked" id="accordion-1" />
                             <label for= "accordion-1">Sua Beleza</label>
                             <div class="accordion-content">
-                                <p>Sabemos que com a rotina agitada nem sempre sobre tempo para se cuidar. Por isso o programa Sua Beleza traz para dentro da MRV um “salão de beleza”, facilitando cuidados de rotina.</p>
+                                <p>Sabemos que com a rotina agitada nem sempre sobre tempo para se 
+                                    cuidar. Por isso o programa Sua Beleza traz para dentro da MRV um 
+                                    “salão de beleza”, facilitando cuidados de rotina.</p>
                             </div>
                         </div> 
                         <div class="Accordion-Item">
@@ -66,7 +68,30 @@
                         </div>
                     </div>
                     <div class="Container-Space">
-
+                        <h2>Conheça nosso espaço</h2>
+                        <p>Temos um ambiente dinâmico, que estimula o aprendizado
+                            e convida todos a pensarem no bem comum. Afinal, estamos
+                            construindo hoje as bases para um mundo melhor, cheio de 
+                            inovação, sustentabilidade e integridade. E tudo isso a gente 
+                            já encontra por aqui.<br><br><strong> Clique aqui e faça um tour virtual pela 
+                            nossa sede em BH (MG).</strong>
+                        </p>
+                        <div class="Conter-Slider">
+                            <div class="Container-Slide">
+                                <button id="prev" onclick="back('Slide', 312)"></button>
+                                <div class="Slide" id="Slide">
+                                    <div class="Slide-Item" style="background-color: aqua;">
+                                    </div>
+                                    <div class="Slide-Item" style="background-color: rgb(16, 19, 19);">
+                                    </div>
+                                    <div class="Slide-Item" style="background-color: rgb(251, 255, 0);">
+                                    </div>
+                                    <div class="Slide-Item" style="background-color: rgb(65, 223, 51);">
+                                    </div>
+                                </div>
+                                <button onclick="next('Slide', 312)"></button>
+                            </div>
+                        </div>
                     </div>
                     <div class="Container-Vacancies">
                         <h2>Vagas disponíveis</h2>
@@ -92,5 +117,6 @@
                 </div>
         </div>
     </div>
+    <script src="./Assets/Src/Scripts/index.js"></script>
 </body>
 </html>

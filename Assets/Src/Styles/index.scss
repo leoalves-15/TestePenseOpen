@@ -19,13 +19,13 @@ $black-text : #242625;
     line-height: 21px;
     color: $black-text;
 }
-@mixin buttons {
+@mixin buttons($radius) {
     font-family: Averta Std;
     padding: 0px 16px;
     width: 146px;
     height: 48px;
     background: $second-green;
-    border-radius: 8px;
+    border-radius: $radius ;
     border: none;
     font-weight: bold;
     font-size: 16px;
@@ -41,6 +41,7 @@ $black-text : #242625;
     height: 40px;
 }
 *{
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
 }
@@ -68,7 +69,8 @@ $black-text : #242625;
         width: 100%;
         height: 256px;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-position-y: center;
+        background-size: cover;
         background-image: url("../Images/BannerMobile.png");
         border-radius: 0 0 0 24px;
     }
@@ -89,6 +91,9 @@ $black-text : #242625;
 }
 .Container-contents{
     margin: 24px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 .Container-explore-opportunities{
 
@@ -112,42 +117,11 @@ $black-text : #242625;
     }
     .Container-cta-vacancies{
         button{
-            @include buttons();
+            @include buttons(8px);
         }
     }
 
 }
-.Container-Vacancies{
-    margin-top: 40px;
-    > h2{
-        @include Call-To-Action($black-text, 22px, 700 );
-        margin-bottom: 4px;
-    }
-    > p{
-        @include text();
-        margin-bottom: 16px;
-    }
-    .form{
-        .Form-Row{
-            margin-bottom: 16px;
-            > input, > select{
-                @include inputs();
-            }
-            > label{
-                @include Call-To-Action($black-text, 24px, 700 );
-                margin-bottom: 4px;
-            }
-        }
-    }
-    .Container-Vacancies-CTA{
-        display: flex;
-        justify-content: center;
-        > button{
-            @include buttons();
-        }
-    }
-}
-
 .Container-Accordions{
     margin-top:40px;
     > h2 {
@@ -198,3 +172,84 @@ $black-text : #242625;
          }
     }
 }
+.Container-Space{
+    .Conter-Slider{
+        margin-top: 24px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .Container-Slide{
+            display: flex;
+            position: relative;
+            width: 312px;
+            > button {
+                width: 48px !important;
+                height: 48px !important;
+                position: absolute;
+                background-repeat: no-repeat !important;
+                background-position: center center !important;
+                top: calc(50% - (48px/2));
+                &:first-child{
+                    background-image: url(../Images/left.svg) !important;
+                    @include buttons(0 8px 8px 0);
+                    left: 0;
+                }
+                &:last-child{
+                    background-image: url(../Images/right.svg) !important;
+                    @include buttons(8px 0px 0 8px);
+                    right: 0;
+                }
+            }
+            .Slide{
+                width: 100%;
+                max-width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                white-space: nowrap;
+                overflow: hidden; 
+                scroll-snap-type: x mandatory;
+                .Slide-Item{
+                    background-image: url('../Images/ImagemSlide.png');
+                    scroll-snap-align: start;
+                    border-radius: 16px;
+                    width:312px;
+                    height:176px;
+                    min-height: 176px;
+                    min-width: 312px;
+                }
+            }
+        }
+    }
+}
+.Container-Vacancies{
+    margin-top: 40px;
+    > h2{
+        @include Call-To-Action($black-text, 22px, 700 );
+        margin-bottom: 4px;
+    }
+    > p{
+        @include text();
+        margin-bottom: 16px;
+    }
+    .form{
+        .Form-Row{
+            margin-bottom: 16px;
+            > input, > select{
+                @include inputs();
+            }
+            > label{
+                @include Call-To-Action($black-text, 24px, 700 );
+                margin-bottom: 4px;
+            }
+        }
+    }
+    .Container-Vacancies-CTA{
+        display: flex;
+        justify-content: center;
+        > button{
+            @include buttons(8px);
+        }
+    }
+}
+
