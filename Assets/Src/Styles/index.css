@@ -46,12 +46,59 @@
   background: linear-gradient(225deg, #079D56 0%, #006B3F 100%);
 }
 .Container-Banner .Text-Banner h1 {
+  font-family: Averta Std;
   color: #ffffff;
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
   font-style: normal;
   margin-left: 16px;
+  width: 176px;
+}
+
+.Container-contents {
+  margin: 24px;
+}
+
+.Container-explore-opportunities .Container-cta-Career {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Container-explore-opportunities .Container-cta-Career > img, .Container-explore-opportunities .Container-cta-Career .Row-cta-Carrer {
+  padding-bottom: 24px;
+}
+.Container-explore-opportunities .Container-Text-Career > h2 {
+  font-family: Averta Std;
+  color: #242625;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+  font-style: normal;
+  width: 245px;
+}
+.Container-explore-opportunities .Container-Text-Career > p {
+  font-family: Averta Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #242625;
+  margin: 8px 0px 24px 0px;
+}
+.Container-explore-opportunities .Container-cta-vacancies button {
+  font-family: Averta Std;
+  padding: 0px 16px;
+  width: 146px;
+  height: 48px;
+  background: #006B3F;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */
