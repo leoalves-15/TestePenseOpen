@@ -90,13 +90,29 @@ $black-text : #242625;
     }
 }
 .Container-contents{
-    margin: 24px;
+    margin: 32px 24px;
     display: flex;
     flex-direction: column;
     align-content: center;
 }
+.Container-Navigation{
+    margin-bottom: 24px;
+    .Contain-Navigation{
+        display: flex;
+        align-items: center;
+        > img {
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        > a{
+            @include text();
+            font-weight: bold;
+            color: $second-green !important;
+            margin: 0 05px;
+        } 
+    }
+}
 .Container-explore-opportunities{
-
     .Container-cta-Career{
         display: flex;
         flex-direction: column;

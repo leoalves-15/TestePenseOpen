@@ -59,10 +59,33 @@
 }
 
 .Container-contents {
-  margin: 24px;
+  margin: 32px 24px;
   display: flex;
   flex-direction: column;
   align-content: center;
+}
+
+.Container-Navigation {
+  margin-bottom: 24px;
+}
+.Container-Navigation .Contain-Navigation {
+  display: flex;
+  align-items: center;
+}
+.Container-Navigation .Contain-Navigation > img {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.Container-Navigation .Contain-Navigation > a {
+  font-family: Averta Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #242625;
+  font-weight: bold;
+  color: #006B3F !important;
+  margin: 0 5px;
 }
 
 .Container-explore-opportunities .Container-cta-Career {
