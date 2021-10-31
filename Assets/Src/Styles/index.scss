@@ -29,6 +29,13 @@ $black-text : #242625;
     line-height: 21px;
     color: $black-text;
 }
+@mixin textDesktop (){
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black-text;
+}
 @mixin buttons($radius) {
     padding: 0px 16px;
     width: 146px;
@@ -280,31 +287,56 @@ $black-text : #242625;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .Container-Banner{
-        margin-top: 48px;
-        flex-direction: row-reverse;
-        justify-content: center;
-        .Banner{
-            background-image: url("../Images/BannerDesktop.png");
-            height: 304px;
-            width: 718px;
-            border-radius: 0 32px 32px 0;
-        }
-        .Text-Banner{
-            justify-content: center;
-            margin-right: -82px;
-            width: 612px;
-            height: 304px;
-            border-radius: 32px;
-            > h1 {
-                width: 400px;
-                height: 120px;
-                @include Call-To-Action-Descktop($withe-text, 60px, bold)
+        .Container-Header{
+            >img {
+                display: none;
             }
         }
-    }
-    .Container-contents{
-        max-width: 1360px;
-    }
+        .Container-Banner{
+            margin-top: 48px;
+            flex-direction: row-reverse;
+            justify-content: center;
+            .Banner{
+                background-image: url("../Images/BannerDesktop.png");
+                height: 304px;
+                width: 718px;
+                border-radius: 0 32px 32px 0;
+            }
+            .Text-Banner{
+                justify-content: center;
+                margin-right: -82px;
+                width: 612px;
+                height: 304px;
+                border-radius: 32px;
+                > h1 {
+                    width: 400px;
+                    height: 120px;
+                    @include Call-To-Action-Descktop($withe-text, 60px, bold);
+                }
+            }
+        }
+        .Container-contents{
+            max-width: 1248px;
+            margin: 32px 56px;
+            .Contain-explore-opportunities{
+                display: flex;
+                justify-content: space-between;
+                .Container-Text-Career{
+                    >h2{
+                        width: 543px;
+                        height: 120px;
+                        @include Call-To-Action-Descktop($black-text, 60px, bold);
+                    }
+                    > p{
+                        width: 612px;
+                        height: 120px;
+                        @include textDesktop();
+                    }
+                }
+                .Container-cta-Career{
+                    margin-right: 64px;
+                }
+            }
+        }
+    }   
 }

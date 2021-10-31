@@ -326,26 +326,28 @@
     flex-direction: column;
     align-items: center;
   }
-
-  .Container-Banner {
+  .Contain-All .Container-Header > img {
+    display: none;
+  }
+  .Contain-All .Container-Banner {
     margin-top: 48px;
     flex-direction: row-reverse;
     justify-content: center;
   }
-  .Container-Banner .Banner {
+  .Contain-All .Container-Banner .Banner {
     background-image: url("../Images/BannerDesktop.png");
     height: 304px;
     width: 718px;
     border-radius: 0 32px 32px 0;
   }
-  .Container-Banner .Text-Banner {
+  .Contain-All .Container-Banner .Text-Banner {
     justify-content: center;
     margin-right: -82px;
     width: 612px;
     height: 304px;
     border-radius: 32px;
   }
-  .Container-Banner .Text-Banner > h1 {
+  .Contain-All .Container-Banner .Text-Banner > h1 {
     width: 400px;
     height: 120px;
     color: #ffffff;
@@ -354,9 +356,34 @@
     font-weight: bold;
     font-style: normal;
   }
-
-  .Container-contents {
-    max-width: 1360px;
+  .Contain-All .Container-contents {
+    max-width: 1248px;
+    margin: 32px 56px;
+  }
+  .Contain-All .Container-contents .Contain-explore-opportunities {
+    display: flex;
+    justify-content: space-between;
+  }
+  .Contain-All .Container-contents .Contain-explore-opportunities .Container-Text-Career > h2 {
+    width: 543px;
+    height: 120px;
+    color: #242625;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: bold;
+    font-style: normal;
+  }
+  .Contain-All .Container-contents .Contain-explore-opportunities .Container-Text-Career > p {
+    width: 612px;
+    height: 120px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #242625;
+  }
+  .Contain-All .Container-contents .Contain-explore-opportunities .Container-cta-Career {
+    margin-right: 64px;
   }
 }
 
