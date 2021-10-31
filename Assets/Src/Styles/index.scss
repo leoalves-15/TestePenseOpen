@@ -276,6 +276,11 @@ $black-text : #242625;
     body{
         overflow-x: hidden;
     }
+    .Contain-All{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .Container-Banner{
         margin-top: 48px;
         flex-direction: row-reverse;
@@ -298,5 +303,8 @@ $black-text : #242625;
                 @include Call-To-Action-Descktop($withe-text, 60px, bold)
             }
         }
+    }
+    .Container-contents{
+        max-width: 1360px;
     }
 }
