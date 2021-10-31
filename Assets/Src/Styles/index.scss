@@ -2,17 +2,27 @@ $primary-green: #079D56;
 $second-green: #006B3F;
 $withe-text : #ffffff;
 $black-text : #242625;
-
-@mixin Call-To-Action($text-color, $line-height, $weight) {
+*{
     font-family: Averta Std;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+@mixin Call-To-Action($text-color, $line-height, $weight) {
     color: $text-color;
     font-size: 18px;
     line-height: $line-height;
     font-weight: $weight;
     font-style: normal;
 }
+@mixin Call-To-Action-Descktop ($text-color, $line-height, $weight){
+    color: $text-color;
+    font-size: 40px;
+    line-height: $line-height;
+    font-weight: $weight;
+    font-style: normal;
+}
 @mixin text (){
-    font-family: Averta Std;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -20,7 +30,6 @@ $black-text : #242625;
     color: $black-text;
 }
 @mixin buttons($radius) {
-    font-family: Averta Std;
     padding: 0px 16px;
     width: 146px;
     height: 48px;
@@ -39,11 +48,6 @@ $black-text : #242625;
     border-radius: 8px;
     width: 312px;
     height: 40px;
-}
-*{
-    scroll-behavior: smooth;
-    padding: 0;
-    margin: 0;
 }
 .Container-All{
     width: 100vw;
@@ -268,4 +272,31 @@ $black-text : #242625;
         }
     }
 }
-
+@media (min-width:1023px) {
+    body{
+        overflow-x: hidden;
+    }
+    .Container-Banner{
+        margin-top: 48px;
+        flex-direction: row-reverse;
+        justify-content: center;
+        .Banner{
+            background-image: url("../Images/BannerDesktop.png");
+            height: 304px;
+            width: 718px;
+            border-radius: 0 32px 32px 0;
+        }
+        .Text-Banner{
+            justify-content: center;
+            margin-right: -82px;
+            width: 612px;
+            height: 304px;
+            border-radius: 32px;
+            > h1 {
+                width: 400px;
+                height: 120px;
+                @include Call-To-Action-Descktop($withe-text, 60px, bold)
+            }
+        }
+    }
+}

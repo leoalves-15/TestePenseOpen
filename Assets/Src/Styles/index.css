@@ -1,4 +1,5 @@
 * {
+  font-family: Averta Std;
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
@@ -48,7 +49,6 @@
   background: linear-gradient(225deg, #079D56 0%, #006B3F 100%);
 }
 .Container-Banner .Text-Banner h1 {
-  font-family: Averta Std;
   color: #ffffff;
   font-size: 18px;
   line-height: 22px;
@@ -77,7 +77,6 @@
   margin-bottom: 5px;
 }
 .Container-Navigation .Contain-Navigation > a {
-  font-family: Averta Std;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -97,7 +96,6 @@
   padding-bottom: 24px;
 }
 .Container-explore-opportunities .Container-Text-Career > h2 {
-  font-family: Averta Std;
   color: #242625;
   font-size: 18px;
   line-height: 27px;
@@ -106,7 +104,6 @@
   width: 245px;
 }
 .Container-explore-opportunities .Container-Text-Career > p {
-  font-family: Averta Std;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -115,7 +112,6 @@
   margin: 8px 0px 24px 0px;
 }
 .Container-explore-opportunities .Container-cta-vacancies button {
-  font-family: Averta Std;
   padding: 0px 16px;
   width: 146px;
   height: 48px;
@@ -134,7 +130,6 @@
 }
 .Container-Accordions > h2 {
   margin-bottom: 4px;
-  font-family: Averta Std;
   color: #242625;
   font-size: 18px;
   line-height: 27px;
@@ -142,7 +137,6 @@
   font-style: normal;
 }
 .Container-Accordions > p {
-  font-family: Averta Std;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -158,7 +152,6 @@
   display: none;
 }
 .Container-Accordions .Accordion-Item > label {
-  font-family: Averta Std;
   color: #006B3F;
   font-size: 18px;
   line-height: 16px;
@@ -192,7 +185,6 @@
   transition: height 0.3s ease-in-out;
 }
 .Container-Accordions .Accordion-Item .accordion-content > p {
-  font-family: Averta Std;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -221,7 +213,6 @@
 }
 .Container-Space .Conter-Slider .Container-Slide > button:first-child {
   background-image: url(../Images/left.svg) !important;
-  font-family: Averta Std;
   padding: 0px 16px;
   width: 146px;
   height: 48px;
@@ -237,7 +228,6 @@
 }
 .Container-Space .Conter-Slider .Container-Slide > button:last-child {
   background-image: url(../Images/right.svg) !important;
-  font-family: Averta Std;
   padding: 0px 16px;
   width: 146px;
   height: 48px;
@@ -275,7 +265,6 @@
   margin-top: 40px;
 }
 .Container-Vacancies > h2 {
-  font-family: Averta Std;
   color: #242625;
   font-size: 18px;
   line-height: 22px;
@@ -284,7 +273,6 @@
   margin-bottom: 4px;
 }
 .Container-Vacancies > p {
-  font-family: Averta Std;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -303,7 +291,6 @@
   height: 40px;
 }
 .Container-Vacancies .form .Form-Row > label {
-  font-family: Averta Std;
   color: #242625;
   font-size: 18px;
   line-height: 24px;
@@ -316,7 +303,6 @@
   justify-content: center;
 }
 .Container-Vacancies .Container-Vacancies-CTA > button {
-  font-family: Averta Std;
   padding: 0px 16px;
   width: 146px;
   height: 48px;
@@ -328,6 +314,40 @@
   line-height: 16px;
   font-style: normal;
   color: white;
+}
+
+@media (min-width: 1023px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .Container-Banner {
+    margin-top: 48px;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .Container-Banner .Banner {
+    background-image: url("../Images/BannerDesktop.png");
+    height: 304px;
+    width: 718px;
+    border-radius: 0 32px 32px 0;
+  }
+  .Container-Banner .Text-Banner {
+    justify-content: center;
+    margin-right: -82px;
+    width: 612px;
+    height: 304px;
+    border-radius: 32px;
+  }
+  .Container-Banner .Text-Banner > h1 {
+    width: 400px;
+    height: 120px;
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: bold;
+    font-style: normal;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
