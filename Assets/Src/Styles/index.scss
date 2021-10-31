@@ -51,7 +51,7 @@ $black-text : #242625;
     width: 100%;
 }
 .Container-Banner, Container-Navigation, 
-.Container-Value, .Container-Space, .Container-vacancies,Container-explore-opportunities{
+.Container-Accordions, .Container-Space, .Container-vacancies,Container-explore-opportunities{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -145,5 +145,56 @@ $black-text : #242625;
         > button{
             @include buttons();
         }
+    }
+}
+
+.Container-Accordions{
+    margin-top:40px;
+    > h2 {
+       margin-bottom:4px; 
+       @include Call-To-Action($black-text, 27px, 700);
+    }
+    > p {
+        @include text();
+        margin-bottom: 16px;
+    }
+    .Accordion-Item{
+        border-bottom: solid 2px $second-green ;
+        margin-bottom: 24px;
+        > input{
+            display:none;
+        }
+        > label{
+            @include Call-To-Action($second-green, 16px, 700 );
+            display:flex;
+            justify-content: space-between;
+            border:none;
+            background: transparent;
+            cursor:pointer;
+            padding-bottom: 16px;
+            &:after {
+                content: url(../Images/arrow-up.svg);
+                float: right;
+              }
+        }
+        [id^=accordion]:checked ~ .accordion-content {
+            height: 100px;
+        }
+        [id^=accordion]:checked ~ label:after{
+            content: url(../Images/arrow-down.svg);
+            float: right;
+        }
+        .accordion-content{
+            height: 0px;
+            overflow: hidden;
+            -webkit-transition: height 0.3s ease-in-out;
+            -moz-transition: height 0.3s ease-in-out;
+            -o-transition: height 0.3s ease-in-out;
+            -ms-transition: height 0.3s ease-in-out;
+            transition: height 0.3s ease-in-out;
+            >p{
+                @include text();
+            }
+         }
     }
 }

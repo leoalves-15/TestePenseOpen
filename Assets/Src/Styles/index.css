@@ -12,7 +12,7 @@
 }
 
 .Container-Banner, Container-Navigation,
-.Container-Value, .Container-Space, .Container-vacancies, Container-explore-opportunities {
+.Container-Accordions, .Container-Space, .Container-vacancies, Container-explore-opportunities {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -158,6 +158,77 @@
   line-height: 16px;
   font-style: normal;
   color: white;
+}
+
+.Container-Accordions {
+  margin-top: 40px;
+}
+.Container-Accordions > h2 {
+  margin-bottom: 4px;
+  font-family: Averta Std;
+  color: #242625;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  font-style: normal;
+}
+.Container-Accordions > p {
+  font-family: Averta Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #242625;
+  margin-bottom: 16px;
+}
+.Container-Accordions .Accordion-Item {
+  border-bottom: solid 2px #006B3F;
+  margin-bottom: 24px;
+}
+.Container-Accordions .Accordion-Item > input {
+  display: none;
+}
+.Container-Accordions .Accordion-Item > label {
+  font-family: Averta Std;
+  color: #006B3F;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding-bottom: 16px;
+}
+.Container-Accordions .Accordion-Item > label:after {
+  content: url(../Images/arrow-up.svg);
+  float: right;
+}
+.Container-Accordions .Accordion-Item [id^=accordion]:checked ~ .accordion-content {
+  height: 100px;
+}
+.Container-Accordions .Accordion-Item [id^=accordion]:checked ~ label:after {
+  content: url(../Images/arrow-down.svg);
+  float: right;
+}
+.Container-Accordions .Accordion-Item .accordion-content {
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: height 0.3s ease-in-out;
+  -moz-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  -ms-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+.Container-Accordions .Accordion-Item .accordion-content > p {
+  font-family: Averta Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #242625;
 }
 
 /*# sourceMappingURL=index.css.map */
