@@ -46,42 +46,87 @@
                     <div class="Container-Accordions">
                         <h2>Nossos valores</h2>
                         <p>Conheça os valores que nos guiam:</p>
-                        <div class="Accordion-Item">
-                            <input type="radio" name="accordion" checked="checked" id="accordion-1" />
-                            <label for= "accordion-1">Sua Beleza</label>
-                            <div class="accordion-content">
-                                <p>Sabemos que com a rotina agitada nem sempre sobre tempo para se 
-                                    cuidar. Por isso o programa Sua Beleza traz para dentro da MRV um 
-                                    “salão de beleza”, facilitando cuidados de rotina.</p>
+                        <div class="Contain-Accordions-Mobile">
+                            <div class="Accordion-Item">
+                                <input type="radio" name="accordion" checked="checked" id="accordion-1" />
+                                <label for= "accordion-1">Sua Beleza</label>
+                                <div class="accordion-content">
+                                    <p>Sabemos que com a rotina agitada nem sempre sobre tempo para se 
+                                        cuidar. Por isso o programa Sua Beleza traz para dentro da MRV um 
+                                        “salão de beleza”, facilitando cuidados de rotina.</p>
+                                </div>
+                            </div> 
+                            <div class="Accordion-Item">
+                                <input type="radio" name="accordion" id="accordion-2" />
+                                <label for= "accordion-2">Sua Mente</label>
+                                <div class="accordion-content">
+                                    <p>Sua Mente</p>
+                                </div>
+                            </div> 
+                            <div class="Accordion-Item">
+                                <input type="radio" name="accordion" id="accordion-3" />
+                                <label for= "accordion-3">Bebê a Bordo</label>
+                                <div class="accordion-content">
+                                    <p>Bebê a Bordo</p>
+                                </div>
                             </div>
-                        </div> 
-                        <div class="Accordion-Item">
-                            <input type="radio" name="accordion" id="accordion-2" />
-                            <label for= "accordion-2">Sua Mente</label>
-                            <div class="accordion-content">
-                                <p>Sua Mente</p>
-                            </div>
-                        </div> 
-                        <div class="Accordion-Item">
-                            <input type="radio" name="accordion" id="accordion-3" />
-                            <label for= "accordion-3">Bebê a Bordo</label>
-                            <div class="accordion-content">
-                                <p>Bebê a Bordo</p>
-                            </div>
+                        </div>
+                        <div class="Contain-Accordions-Descktop">
+                            <div class="Accordions-Descktop-Group">
+                                <div class="Accordions-Column">
+                                    <div class="Accordion-Item">
+                                        <input type="radio" name="accordionDesk" checked="checked" id="accordion-4" />
+                                        <label for= "accordion-4">Sua Beleza</label>
+                                        <div class="accordion-content">
+                                            <p>Sabemos que com a rotina agitada nem sempre sobre tempo para se 
+                                                cuidar. Por isso o programa Sua Beleza traz para dentro da MRV um 
+                                                “salão de beleza”, facilitando cuidados de rotina.</p>
+                                        </div>
+                                    </div> 
+                                    <div class="Accordion-Item">
+                                        <input type="radio" name="accordionDesk" id="accordion-5" />
+                                        <label for= "accordion-5">Sua Mente</label>
+                                        <div class="accordion-content">
+                                            <p>Sua Mente</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="Accordions-Column">
+                                    <div class="Accordion-Item">
+                                        <input type="radio" name="accordionDesk" id="accordion-6" />
+                                        <label for= "accordion-6">Encontro</label>
+                                        <div class="accordion-content">
+                                            <p>Encontro</p>
+                                        </div>
+                                    </div>
+                                    <div class="Accordion-Item">
+                                        <input type="radio" name="accordionDesk" id="accordion-7" />
+                                        <label for= "accordion-7">Seu Estilo</label>
+                                        <div class="accordion-content">
+                                            <p>Seu Estilo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <!-- <div class="Accordion-Imagem">
+                                <img  src="./Assets/Src/Images/Grafismo.svg" alt="">
+                            </div> -->
                         </div>
                     </div>
                     <div class="Container-Space">
-                        <h2>Conheça nosso espaço</h2>
-                        <p>Temos um ambiente dinâmico, que estimula o aprendizado
-                            e convida todos a pensarem no bem comum. Afinal, estamos
-                            construindo hoje as bases para um mundo melhor, cheio de 
-                            inovação, sustentabilidade e integridade. E tudo isso a gente 
-                            já encontra por aqui.<br><br><strong> Clique aqui e faça um tour virtual pela 
-                            nossa sede em BH (MG).</strong>
-                        </p>
+                        <div class="Container-Space-Text">
+                            <h2>Conheça nosso espaço</h2>
+                            <p>Temos um ambiente dinâmico, que estimula o aprendizado
+                                e convida todos a pensarem no bem comum. Afinal, estamos
+                                construindo hoje as bases para um mundo melhor, cheio de 
+                                inovação, sustentabilidade e integridade. E tudo isso a gente 
+                                já encontra por aqui.<br><br><strong> Clique aqui e faça um tour virtual pela 
+                                nossa sede em BH (MG).</strong>
+                            </p>
+                        </div>
                         <div class="Conter-Slider">
                             <div class="Container-Slide">
-                                <button id="prev" onclick="back('Slide', 312)"></button>
+                                <button id="prev" onclick="back('Slide')"></button>
                                 <div class="Slide" id="Slide">
                                     <div class="Slide-Item" style="background-color: aqua;">
                                     </div>
@@ -92,7 +137,7 @@
                                     <div class="Slide-Item" style="background-color: rgb(65, 223, 51);">
                                     </div>
                                 </div>
-                                <button onclick="next('Slide', 312)"></button>
+                                <button onclick="next('Slide')"></button>
                             </div>
                         </div>
                     </div>

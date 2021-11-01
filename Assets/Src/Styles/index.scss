@@ -151,6 +151,9 @@ $black-text : #242625;
 }
 .Container-Accordions{
     margin-top:40px;
+    .Contain-Accordions-Descktop{
+        display: none;
+    }
     > h2 {
        margin-bottom:4px; 
        @include Call-To-Action($black-text, 27px, 700);
@@ -200,6 +203,16 @@ $black-text : #242625;
     }
 }
 .Container-Space{
+    .Container-Space-Text{
+        > h2{
+            @include Call-To-Action($black-text, 22px, 700 );
+            margin-bottom: 4px;
+            margin-top: 16px
+        }
+        >p{
+            @include text();
+        }
+    }
     .Conter-Slider{
         margin-top: 24px;
         width: 100%;
@@ -280,7 +293,7 @@ $black-text : #242625;
     }
 }
 @media (min-width:1023px) {
-    body{
+    *{
         overflow-x: hidden;
     }
     .Contain-All{
@@ -335,6 +348,60 @@ $black-text : #242625;
                 }
                 .Container-cta-Career{
                     margin-right: 64px;
+                    margin-top: 110px;
+                }
+            }
+            .Container-Accordions{
+                .Contain-Accordions-Mobile{
+                    display: none;
+                }
+                .Contain-Accordions-Descktop{
+                    display: flex;
+                    justify-content: space-between;
+                    .Accordions-Descktop-Group{
+                        display: flex;
+                        flex-direction: row;
+                    }
+                    .Contain-Accordions-Group{
+                        display: flex;
+                        flex-direction: row;
+                    }
+                    .Accordions-Column{
+                        width: 400px;
+                        &:first-child{
+                            margin-right: 24px;
+                        }
+                    }
+                }
+            }
+            .Container-Space{
+                flex-direction: row-reverse;
+                margin-top: 62px;
+                .Container-Space-Text{
+                    > h2{
+                        @include Call-To-Action-Descktop($black-text, 60px ,700 );
+                        margin-top: 0 !important;
+                    }
+                    >p{
+                        @include textDesktop();
+                        width: 612px;
+                    }
+                }
+                .Conter-Slider{
+                    margin-top: 0;
+                    .Container-Slide{
+                        width: 397px;
+                    }
+                }
+                .Slide{
+                    .Slide-Item{
+                        min-width: 397px;
+                        width: 397px;
+                        height: 264px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
                 }
             }
         }
