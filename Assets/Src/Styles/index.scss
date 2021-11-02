@@ -56,6 +56,13 @@ $black-text : #242625;
     width: 312px;
     height: 40px;
 }
+@mixin inputsDescktop {
+    border: 2px solid #5D615F;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 400px;
+    height: 48px;
+}
 .Container-All{
     width: 100vw;
 }
@@ -264,13 +271,18 @@ $black-text : #242625;
 }
 .Container-Vacancies{
     margin-top: 40px;
-    > h2{
-        @include Call-To-Action($black-text, 22px, 700 );
-        margin-bottom: 4px;
+    .First-Vacancies{
+        > h2{
+            @include Call-To-Action($black-text, 22px, 700 );
+            margin-bottom: 4px;
+        }
+        > p{
+            @include text();
+            margin-bottom: 16px;
+        }
     }
-    > p{
-        @include text();
-        margin-bottom: 16px;
+    .Second-Vacancies, .Third-Vacancies{
+        display: none;
     }
     .form{
         .Form-Row{
@@ -294,12 +306,12 @@ $black-text : #242625;
 }
 @media (min-width:1023px) {
     *{
-        overflow-x: hidden;
+       // overflow-x: hidden;
     }
     .Contain-All{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
         .Container-Header{
             >img {
                 display: none;
@@ -372,6 +384,10 @@ $black-text : #242625;
                             margin-right: 24px;
                         }
                     }
+                    .Accordion-Imagem{
+                        margin-right: calc((21% - 200px)*(-1));
+                        margin-top: calc((8%)* (-1));
+                    }
                 }
             }
             .Container-Space{
@@ -401,6 +417,38 @@ $black-text : #242625;
                         background-repeat: no-repeat;
                         background-position: center;
                         background-size: cover;
+                    }
+                }
+            }
+            .Container-Vacancies{
+                display: flex;
+                margin-top: 96px;
+                justify-content: space-between;
+                .First-Vacancies{
+                    width: 546px;
+                }
+                .Second-Vacancies{
+                    margin-top: 51px;
+                    margin-left: -120px;
+                    display: flex;
+                }
+                .Third-Vacancies{
+                    display: flex;
+                    margin-right: -60px;
+                }
+                .form{
+                    border-right: 2px solid $black-text;
+                    display: flex;
+                    flex-direction: column;
+                    .Form-Row{
+                        display: flex;
+                        flex-direction: column;
+                        > input, > select{
+                            @include inputsDescktop();
+                        }      
+                    }
+                    .Container-Vacancies-CTA{
+                        width: 400px;
                     }
                 }
             }

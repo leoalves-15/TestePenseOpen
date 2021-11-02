@@ -283,7 +283,7 @@
 .Container-Vacancies {
   margin-top: 40px;
 }
-.Container-Vacancies > h2 {
+.Container-Vacancies .First-Vacancies > h2 {
   color: #242625;
   font-size: 18px;
   line-height: 22px;
@@ -291,13 +291,16 @@
   font-style: normal;
   margin-bottom: 4px;
 }
-.Container-Vacancies > p {
+.Container-Vacancies .First-Vacancies > p {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   color: #242625;
   margin-bottom: 16px;
+}
+.Container-Vacancies .Second-Vacancies, .Container-Vacancies .Third-Vacancies {
+  display: none;
 }
 .Container-Vacancies .form .Form-Row {
   margin-bottom: 16px;
@@ -336,15 +339,6 @@
 }
 
 @media (min-width: 1023px) {
-  * {
-    overflow-x: hidden;
-  }
-
-  .Contain-All {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .Contain-All .Container-Header > img {
     display: none;
   }
@@ -426,6 +420,10 @@
   .Contain-All .Container-contents .Container-Accordions .Contain-Accordions-Descktop .Accordions-Column:first-child {
     margin-right: 24px;
   }
+  .Contain-All .Container-contents .Container-Accordions .Contain-Accordions-Descktop .Accordion-Imagem {
+    margin-right: calc((21% - 200px) * -1);
+    margin-top: -8%;
+  }
   .Contain-All .Container-contents .Container-Space {
     flex-direction: row-reverse;
     margin-top: 62px;
@@ -459,6 +457,42 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+  .Contain-All .Container-contents .Container-Vacancies {
+    display: flex;
+    margin-top: 96px;
+    justify-content: space-between;
+  }
+  .Contain-All .Container-contents .Container-Vacancies .First-Vacancies {
+    width: 546px;
+  }
+  .Contain-All .Container-contents .Container-Vacancies .Second-Vacancies {
+    margin-top: 51px;
+    margin-left: -120px;
+    display: flex;
+  }
+  .Contain-All .Container-contents .Container-Vacancies .Third-Vacancies {
+    display: flex;
+    margin-right: -60px;
+  }
+  .Contain-All .Container-contents .Container-Vacancies .form {
+    border-right: 2px solid #242625;
+    display: flex;
+    flex-direction: column;
+  }
+  .Contain-All .Container-contents .Container-Vacancies .form .Form-Row {
+    display: flex;
+    flex-direction: column;
+  }
+  .Contain-All .Container-contents .Container-Vacancies .form .Form-Row > input, .Contain-All .Container-contents .Container-Vacancies .form .Form-Row > select {
+    border: 2px solid #5D615F;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 400px;
+    height: 48px;
+  }
+  .Contain-All .Container-contents .Container-Vacancies .form .Container-Vacancies-CTA {
+    width: 400px;
   }
 }
 

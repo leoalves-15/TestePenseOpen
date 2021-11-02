@@ -10,3 +10,6 @@ function next(id){
 function back(id){
     document.getElementById(id).scrollLeft -= width;
 }
+window.onload = () => {
+    console.log("teste")
+} 
