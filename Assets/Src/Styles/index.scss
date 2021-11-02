@@ -63,6 +63,9 @@ $black-text : #242625;
     width: 400px;
     height: 48px;
 }
+.modal{
+    display: none;
+}
 .Container-All{
     width: 100vw;
 }
@@ -75,10 +78,13 @@ $black-text : #242625;
     display: flex;
     flex-direction: column;
 }
-.Container-Header{
+.Container-Header-Mobile{
     z-index: 9999;
     height: 90px;
     position: absolute;
+}
+.Container-Header-Desktop{
+    display: none;
 }
 .Container-Banner{
     align-items: flex-end;
@@ -315,9 +321,87 @@ $black-text : #242625;
         // display: flex;
         // flex-direction: column;
         // align-items: center;
-        .Container-Header{
+        .Container-Header-Mobile{
             >img {
                 display: none;
+            }
+        }
+        header{
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            padding: 24px 56px 0px 56px;
+        }
+        .Container-Header-Desktop{
+            max-width: 1248px;
+            width: 1248px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .First-Accessibility{
+                display: flex;
+            }
+            .Contain-Imgs{
+                display: flex;
+                align-items: flex-end;
+                img{
+                    padding-right: 4px;
+                }
+            }
+            .Contain-Imgs:after{
+                content: "|";
+                color: gainsboro;
+            }
+            .Header-Nav{
+                a{
+                    @include text();
+                    color: #d2d3d3;
+                    text-decoration: none;
+                }
+                .First-Nav{
+                    padding-left: 40px;
+                    li{
+                        margin-right: 10px;
+                        &:last-child{
+                            margin-right: 0px;
+                        }
+                        &:hover{
+                            border-bottom: 2px solid $second-green;
+                        }
+                    }
+                }
+                .Second-Nav{
+                    width: 900px;
+                    ul{
+                        color: $withe-text;
+                        display: flex;
+                        height: 35px;
+                        background: $second-green;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 5px;
+                        a{
+                            color: $withe-text;
+                        }
+                        li{
+                            padding: 0px 10px 0px 10px;
+                            border-right: 1px solid $withe-text;
+                            &:last-child{
+                                padding: 0px 0px 0px 10px;
+                                border-right: none;
+                            }
+                            &:first-child{
+                                padding: 0px 10px 0px 0px;
+                            }
+                        }
+                    }
+                }
+            }
+            li{
+                display: inline;
             }
         }
         .Container-Banner{
@@ -536,6 +620,7 @@ $black-text : #242625;
             justify-content: space-around;
             .footer-column{
                 > img{
+                    margin-bottom: 10px;
                     width: 130px;
                     margin-left: -20px;
                 }
@@ -565,7 +650,7 @@ $black-text : #242625;
                         line-height: 21px;
                         padding-top: 4px;
                         padding-bottom: 4px;
-                        border-bottom: 1px solid #e7e8e8
+                        border-bottom: 1px solid #e7e8e8;
                     }
                     >li:last-child{
                         border-bottom: none;

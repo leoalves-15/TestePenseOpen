@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+.modal {
+  display: none;
+}
+
 .Container-All {
   width: 100vw;
 }
@@ -20,10 +24,14 @@
   flex-direction: column;
 }
 
-.Container-Header {
+.Container-Header-Mobile {
   z-index: 9999;
   height: 90px;
   position: absolute;
+}
+
+.Container-Header-Desktop {
+  display: none;
 }
 
 .Container-Banner {
@@ -343,8 +351,88 @@
 }
 
 @media (min-width: 1023px) {
-  .Contain-All .Container-Header > img {
+  .Contain-All .Container-Header-Mobile > img {
     display: none;
+  }
+  .Contain-All header {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    padding: 24px 56px 0px 56px;
+  }
+  .Contain-All .Container-Header-Desktop {
+    max-width: 1248px;
+    width: 1248px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Contain-All .Container-Header-Desktop .First-Accessibility {
+    display: flex;
+  }
+  .Contain-All .Container-Header-Desktop .Contain-Imgs {
+    display: flex;
+    align-items: flex-end;
+  }
+  .Contain-All .Container-Header-Desktop .Contain-Imgs img {
+    padding-right: 4px;
+  }
+  .Contain-All .Container-Header-Desktop .Contain-Imgs:after {
+    content: "|";
+    color: gainsboro;
+  }
+  .Contain-All .Container-Header-Desktop .Header-Nav a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #242625;
+    color: #d2d3d3;
+    text-decoration: none;
+  }
+  .Contain-All .Container-Header-Desktop .Header-Nav .First-Nav {
+    padding-left: 40px;
+  }
+  .Contain-All .Container-Header-Desktop .Header-Nav .First-Nav li {
+    margin-right: 10px;
+  }
+  .Contain-All .Container-Header-Desktop .Header-Nav .First-Nav li:last-child {
+    margin-right: 0px;
+  }
+  .Contain-All .Container-Header-Desktop .Header-Nav .First-Nav li:hover {
+    border-bottom: 2px solid #006B3F;
+  }
+  .Contain-All .Container-Header-Desktop .Header-Nav .Second-Nav {
+    width: 900px;
+  }
+  .Contain-All .Container-Header-Desktop .Header-Nav .Second-Nav ul {
+    color: #ffffff;
+    display: flex;
+    height: 35px;
+    background: #006B3F;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .Contain-All .Container-Header-Desktop .Header-Nav .Second-Nav ul a {
+    color: #ffffff;
+  }
+  .Contain-All .Container-Header-Desktop .Header-Nav .Second-Nav ul li {
+    padding: 0px 10px 0px 10px;
+    border-right: 1px solid #ffffff;
+  }
+  .Contain-All .Container-Header-Desktop .Header-Nav .Second-Nav ul li:last-child {
+    padding: 0px 0px 0px 10px;
+    border-right: none;
+  }
+  .Contain-All .Container-Header-Desktop .Header-Nav .Second-Nav ul li:first-child {
+    padding: 0px 10px 0px 0px;
+  }
+  .Contain-All .Container-Header-Desktop li {
+    display: inline;
   }
   .Contain-All .Container-Banner {
     margin-top: 48px;
@@ -575,6 +663,7 @@
     justify-content: space-around;
   }
   .footer footer .footer-column > img {
+    margin-bottom: 10px;
     width: 130px;
     margin-left: -20px;
   }
