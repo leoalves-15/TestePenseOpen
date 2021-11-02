@@ -304,6 +304,9 @@ $black-text : #242625;
         }
     }
 }
+.footer{
+    display: none;
+}
 @media (min-width:1023px) {
     *{
        // overflow-x: hidden;
@@ -435,6 +438,9 @@ $black-text : #242625;
                 .Third-Vacancies{
                     display: flex;
                     margin-right: -60px;
+                    > img{
+                        margin-bottom: -150%;
+                    }
                 }
                 .form{
                     border-right: 2px solid $black-text;
@@ -453,5 +459,148 @@ $black-text : #242625;
                 }
             }
         }
-    }   
+    } 
+    .footer{
+        margin-top: 275px;
+        display: flex;
+        flex-direction: column;
+        .Container-Social{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            ul {
+                // list-style-type: square;
+                // list-style: inside url("../Images/square.png");
+                display: flex;
+                margin-bottom: 50px;
+                >li{
+                    margin-left: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #57595b;
+                    border-radius: 50px;
+                    width: 64px;
+                    height: 64px;
+                    > img{
+                        width: 34px;
+                        height: 34px;
+                    }
+                }
+                > li:first-child{
+                    margin-left: 0;
+                }
+            }
+        }
+        .Container-Footer-Cta{
+            height: 150px;
+            background-color: $second-green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .Footer-Cta-Img{
+                display: flex;
+                height: 100px;
+                align-items: flex-start;
+            }
+            .Footer-Cta-Title{
+                > h2 {
+                    color: $withe-text;
+                    font-size: 80px;
+                    margin-right: 30px;
+                    margin-left: 10px;
+                }
+            }
+            .Footer-Cta-Text{
+                width: 34%;
+                > p{
+                    color: $withe-text;
+                    font-size: 30px;
+                }
+            }
+        }
+        .Contain-Footer{
+            display: flex;
+            max-width: 1030px;
+            width: 1030px;
+            justify-content: space-between;
+            border-bottom: solid #e7e8e8;
+            padding-bottom: 20px;
+        }
+        footer{
+            padding-top: 40px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            .footer-column{
+                > img{
+                    width: 130px;
+                    margin-left: -20px;
+                }
+                ul{
+                    list-style-type: square;
+                    color: $second-green;
+                    > hr{
+                        background-color: $second-green;
+                        margin-left: -20px;
+                        width: 40px;
+                        height: 4px;
+                        border: none;
+                        margin-bottom: 8px;
+                    }
+                    > h2{
+                        color: #555d5c;
+                        margin-left: -20px;
+                    }
+                    > span{
+                        @include text();
+                        color: #555d5c;
+                        font-weight: bold;
+                        padding-top: 4px;
+                        padding-bottom: 4px;
+                    }
+                    > li{
+                        line-height: 21px;
+                        padding-top: 4px;
+                        padding-bottom: 4px;
+                        border-bottom: 1px solid #e7e8e8
+                    }
+                    >li:last-child{
+                        border-bottom: none;
+                    }
+                    > li > a{
+                        list-style: none;
+                        text-decoration: none;
+                        @include text();
+                        color: #d3d6d4;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .Footer-Infos{
+                width: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                >ul{
+                    >li{
+                        display: inline;
+                        padding-right: 10px;
+                        padding-left: 10px;
+                        border-right: 1px solid #d2dace;
+                        @include text();
+                        color: #d3d6d4;
+                        &:last-child{
+                            border-right: none;
+                        }
+                        &:first-child{
+                            padding-left: none;
+                        }
+                    }
+                }
+            }
+        }
+    }  
 }
