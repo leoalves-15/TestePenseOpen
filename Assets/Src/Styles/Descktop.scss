@@ -11,6 +11,12 @@
             display: flex;
             justify-content: center;
             padding: 24px 56px 0px 56px;
+            z-index: 9999;
+            position: fixed;
+            right: 0px;
+            left: 0px;
+            top: 0px;
+            background-color: $withe-text;
         }
         .Container-Header-Desktop{
             max-width: 1248px;
@@ -85,7 +91,7 @@
             }
         }
         .Container-Banner{
-            margin-top: 48px;
+            margin-top: 192px;
             flex-direction: row-reverse;
             justify-content: center;
             .Banner{

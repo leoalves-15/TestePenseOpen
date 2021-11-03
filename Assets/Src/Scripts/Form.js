@@ -4,7 +4,6 @@ var flagType = false;
 var button = document.getElementById('find');
 function validationForm(){
     if(flagCity && flagType & flagArea){
-        console.log("foi")
         button.style.backgroundColor = "#006B3F";
         button.style.cursor = 'pointer';
         button.disabled = false;

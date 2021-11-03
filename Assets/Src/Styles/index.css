@@ -77,7 +77,6 @@ body {
 }
 
 .Container-Header-Mobile {
-  z-index: 99;
   height: 90px;
   position: absolute;
 }
@@ -418,6 +417,12 @@ body {
     display: flex;
     justify-content: center;
     padding: 24px 56px 0px 56px;
+    z-index: 9999;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    background-color: #ffffff;
   }
   .Contain-All .Container-Header-Desktop {
     max-width: 1248px;
@@ -494,7 +499,7 @@ body {
     display: inline;
   }
   .Contain-All .Container-Banner {
-    margin-top: 48px;
+    margin-top: 192px;
     flex-direction: row-reverse;
     justify-content: center;
   }
