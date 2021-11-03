@@ -1,3 +1,15 @@
+@font-face {
+    font-family: Averta Std ;
+    src: url('../Fonts/AvertaStd-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Averta regular ;
+    src: url('../Fonts/AvertaStd-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 @mixin Call-To-Action($text-color, $line-height, $weight) {
     color: $text-color;
     font-size: 18px;
@@ -18,6 +30,7 @@
     font-size: 14px;
     line-height: 21px;
     color: $black-text;
+    font-family: Averta regular;
 }
 @mixin textDesktop (){
     font-style: normal;
@@ -45,6 +58,8 @@
     border-radius: 8px;
     width: 312px;
     height: 40px;
+    font-family: Averta regular;
+    font-weight: 400;
 }
 @mixin inputsDescktop {
     border: 2px solid #5D615F;
@@ -52,4 +67,6 @@
     border-radius: 8px;
     width: 400px;
     height: 48px;
+    font-family: Averta regular;
+    font-weight: 400;
 }

@@ -1,3 +1,15 @@
+@font-face {
+  font-family: Averta Std;
+  src: url("../Fonts/AvertaStd-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Averta regular;
+  src: url("../Fonts/AvertaStd-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   overflow-x: clip;
 }
@@ -51,6 +63,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #242625;
+  font-family: Averta regular;
 }
 .modal-open .Modal-Button {
   width: 100%;
@@ -141,6 +154,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #242625;
+  font-family: Averta regular;
   font-weight: bold;
   color: #006B3F !important;
   margin: 0 5px;
@@ -171,6 +185,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #242625;
+  font-family: Averta regular;
   margin: 8px 0px 24px 0px;
 }
 .Container-explore-opportunities .Container-cta-vacancies button {
@@ -207,6 +222,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #242625;
+  font-family: Averta regular;
   margin-bottom: 16px;
 }
 .Container-Accordions .Accordion-Item {
@@ -255,6 +271,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #242625;
+  font-family: Averta regular;
 }
 
 .Container-Space .Container-Space-Text > h2 {
@@ -272,6 +289,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #242625;
+  font-family: Averta regular;
 }
 .Container-Space .Conter-Slider {
   margin-top: 24px;
@@ -359,6 +377,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #242625;
+  font-family: Averta regular;
   margin-bottom: 16px;
 }
 .Container-Vacancies .Second-Vacancies, .Container-Vacancies .Third-Vacancies {
@@ -373,6 +392,8 @@ body {
   border-radius: 8px;
   width: 312px;
   height: 40px;
+  font-family: Averta regular;
+  font-weight: 400;
 }
 .Container-Vacancies .form .Form-Row > label {
   color: #242625;
@@ -408,6 +429,18 @@ body {
   display: none;
 }
 
+@font-face {
+  font-family: Averta Std;
+  src: url("../Fonts/AvertaStd-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Averta regular;
+  src: url("../Fonts/AvertaStd-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 @media (min-width: 1023px) {
   .Contain-All .Container-Header-Mobile > img {
     display: none;
@@ -417,7 +450,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 24px 56px 0px 56px;
-    z-index: 9999;
+    z-index: 999;
     position: fixed;
     right: 0px;
     left: 0px;
@@ -453,6 +486,7 @@ body {
     font-size: 14px;
     line-height: 21px;
     color: #242625;
+    font-family: Averta regular;
     color: #d2d3d3;
     text-decoration: none;
   }
@@ -655,6 +689,8 @@ body {
     border-radius: 8px;
     width: 400px;
     height: 48px;
+    font-family: Averta regular;
+    font-weight: 400;
   }
   .Contain-All .Container-contents .Container-Vacancies .form .Container-Vacancies-CTA {
     width: 400px;
@@ -770,6 +806,7 @@ body {
     font-size: 14px;
     line-height: 21px;
     color: #242625;
+    font-family: Averta regular;
     color: #555d5c;
     font-weight: bold;
     padding-top: 4px;
@@ -792,6 +829,7 @@ body {
     font-size: 14px;
     line-height: 21px;
     color: #242625;
+    font-family: Averta regular;
     color: #d3d6d4;
     font-weight: bold;
   }
@@ -811,6 +849,7 @@ body {
     font-size: 14px;
     line-height: 21px;
     color: #242625;
+    font-family: Averta regular;
     color: #d3d6d4;
   }
   .footer footer .Footer-Infos > ul > li:last-child {
