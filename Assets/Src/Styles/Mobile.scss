@@ -12,7 +12,7 @@ body{
     display: none;
 }
 .modal-open{
-    padding: 32px 56px;
+    padding: 16px;
     z-index: 9999;
     background: $withe-text;
     opacity: 0.96;
@@ -32,7 +32,7 @@ body{
         display: flex;
     }
     .Modal-Text{
-        width: 612px;
+        width: 312px;
         h2{
             @include Call-To-Action($black-text, 36px, 700);
             font-size: 24px;
@@ -43,7 +43,7 @@ body{
     }
     .Modal-Button{
         width: 100%;
-        margin-right: 164px;
+        margin-right: 50px;
         display: flex;
         justify-content: flex-end;
         margin-bottom: 56px;

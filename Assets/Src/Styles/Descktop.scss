@@ -7,6 +7,15 @@
     }
 }
 @media (min-width:1023px) {
+    .modal-open{
+        padding: 32px 56px;
+        .Modal-Text{
+            width: 612px;
+        }
+        .Modal-Button{
+            margin-right: 164px;
+        }
+    }
     .Contain-All{
         .Container-Header-Mobile{
             >img {

@@ -26,7 +26,7 @@ body {
 }
 
 .modal-open {
-  padding: 32px 56px;
+  padding: 16px;
   z-index: 9999;
   background: #ffffff;
   opacity: 0.96;
@@ -47,7 +47,7 @@ body {
   display: flex;
 }
 .modal-open .Modal-Text {
-  width: 612px;
+  width: 312px;
 }
 .modal-open .Modal-Text h2 {
   color: #242625;
@@ -67,7 +67,7 @@ body {
 }
 .modal-open .Modal-Button {
   width: 100%;
-  margin-right: 164px;
+  margin-right: 50px;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 56px;
@@ -449,6 +449,16 @@ body {
   }
 }
 @media (min-width: 1023px) {
+  .modal-open {
+    padding: 32px 56px;
+  }
+  .modal-open .Modal-Text {
+    width: 612px;
+  }
+  .modal-open .Modal-Button {
+    margin-right: 164px;
+  }
+
   .Contain-All .Container-Header-Mobile > img {
     display: none;
   }
