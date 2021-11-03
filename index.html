@@ -210,24 +210,26 @@
                             <div class="form">
                                 <div class="Form-Row">
                                     <label for="">Em qual cidade você quer trabalhar?</label>
-                                    <select type="text" name="" id="city">
-                                        <option value="" selected="true" disabled="disabled">Em qual cidade você quer trabalhar?</option>
+                                    <select type="text" name="" id="city" onchange="handleChangerCity()">
+                                        <option value=""  selected disabled hidden>Em qual cidade você quer trabalhar?</option>
                                     </select>
                                 </div>
                                 <div class="Form-Row">
                                     <label for="">Qual sua área de atuação?</label>
-                                    <select name="" id=" ">
-                                        <option value="" selected="true" disabled="disabled">Selecionar área</option>
+                                    <select name="" id="area" onchange="handleChangerArea()">
+                                        <option value="" selected disabled hidden>Selecionar área</option>
+                                        <option value="Desenvolvimento">Desenvolvimento</option>
                                     </select>
                                 </div>
                                 <div class="Form-Row">
                                     <label for="">E que tipo de vaga você procura?</label>
-                                    <select name="" id="">
+                                    <select name="" id="type" onchange="handleChangerType()">
                                         <option value="" selected="true" disabled="disabled">Selecionar tipo</option>
+                                        <option value="CLT">CLT</option>
                                     </select>
                                 </div>
                                 <div class="Container-Vacancies-CTA">
-                                    <button>Buscar</button>
+                                    <button id="find" disabled>Buscar</button>
                                 </div>
                             </div>
                         </div>
@@ -358,5 +360,6 @@
     <script src="./Assets/Src/Scripts/Modal.js"></script>
     <script src="./Assets/Src/Scripts/Slide.js"></script>
     <script src="./Assets/Src/Scripts/getPlaces.js"></script>
+    <script src="./Assets/Src/Scripts/Form.js"></script>
 </body>
 </html>

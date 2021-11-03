@@ -400,6 +400,10 @@ body {
   font-style: normal;
   color: white;
 }
+.Container-Vacancies .Container-Vacancies-CTA > button:disabled {
+  cursor: not-allowed;
+  background-color: gray;
+}
 
 .footer {
   display: none;

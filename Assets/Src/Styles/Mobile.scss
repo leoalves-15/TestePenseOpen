@@ -295,6 +295,10 @@ body{
         > button{
             @include buttons(8px);
         }
+        > button:disabled{
+            cursor: not-allowed;
+            background-color: gray;
+        }
     }
 }
 .footer{
