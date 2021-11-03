@@ -1,7 +1,7 @@
 # TestePenseOpen
 Fala pessoal, segue uma micro documentação do code.
 <h1>Geral</h1>
-Page construída baseada nos protótipos <a href="https://www.figma.com/file/QfLhYLv8xj1gHF2SXilXrn/Trabalhe-conosco---Mobile?node-id=109%3A3">Mobile</a> e  <a href="https://www.figma.com/file/0o4kp8jfUFinkIlafZAewH/Trabalhe-conosco---Desktop?node-id=1%3A2">Descktop</a>, foi também utilizada <a href="https://servicodados.ibge.gov.br/api/docs/localidades"> API do ibge.</a>
+Page construída baseada nos protótipos <a href="https://www.figma.com/file/QfLhYLv8xj1gHF2SXilXrn/Trabalhe-conosco---Mobile?node-id=109%3A3">Mobile</a> e  <a href="https://www.figma.com/file/0o4kp8jfUFinkIlafZAewH/Trabalhe-conosco---Desktop?node-id=1%3A2">Descktop</a>, foi também utilizada <a href="https://servicodados.ibge.gov.br/api/docs/localidades"> API do ibge. Necessário NPM e SASS</a>
 <br>Foram cumpridas todas as instruções (requisitos) e "vá além" excerto o item 6. <br>
 <h2>HTML</h2>
 HTML dividido em componentes (as classes css com nomes intuitivos), imagens "comprimidas".
