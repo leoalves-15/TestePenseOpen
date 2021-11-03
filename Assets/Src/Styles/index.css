@@ -1,3 +1,7 @@
+body {
+  overflow-x: clip;
+}
+
 * {
   font-family: Averta Std;
   scroll-behavior: smooth;
@@ -66,6 +70,7 @@
 
 .Container-Banner, Container-Navigation,
 .Container-Accordions, .Container-Space, .Container-vacancies, Container-explore-opportunities {
+  overflow-x: clip;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -114,7 +119,7 @@
 }
 
 .Container-contents {
-  margin: 32px 24px;
+  padding: 32px 24px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -146,6 +151,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.Container-explore-opportunities .Container-cta-Career #flag {
+  cursor: pointer;
 }
 .Container-explore-opportunities .Container-cta-Career > img, .Container-explore-opportunities .Container-cta-Career .Row-cta-Carrer {
   padding-bottom: 24px;
@@ -510,7 +518,7 @@
   }
   .Contain-All .Container-contents {
     max-width: 1248px;
-    margin: 32px 56px;
+    padding: 32px 56px;
   }
   .Contain-All .Container-contents .Contain-explore-opportunities {
     display: flex;
@@ -563,9 +571,13 @@
     margin-right: calc((21% - 200px) * -1);
     margin-top: -8%;
   }
+  .Contain-All .Container-contents .Container-Accordions .Contain-Accordions-Descktop .Accordion-Imagem img {
+    position: absolute;
+    right: 0px;
+  }
   .Contain-All .Container-contents .Container-Space {
     flex-direction: row-reverse;
-    margin-top: 62px;
+    margin-top: 100px;
   }
   .Contain-All .Container-contents .Container-Space .Container-Space-Text > h2 {
     color: #242625;
@@ -607,7 +619,7 @@
   }
   .Contain-All .Container-contents .Container-Vacancies .Second-Vacancies {
     margin-top: 51px;
-    margin-left: -120px;
+    margin-left: -400px;
     display: flex;
   }
   .Contain-All .Container-contents .Container-Vacancies .Third-Vacancies {
@@ -615,7 +627,9 @@
     margin-right: -60px;
   }
   .Contain-All .Container-contents .Container-Vacancies .Third-Vacancies > img {
-    margin-bottom: -150%;
+    position: absolute;
+    padding-top: 150px;
+    right: 0;
   }
   .Contain-All .Container-contents .Container-Vacancies .form {
     border-right: 2px solid #242625;
@@ -701,6 +715,9 @@
     border-bottom: solid #e7e8e8;
     padding-bottom: 20px;
   }
+  .footer footer * {
+    overflow-x: inherit !important;
+  }
   .footer footer {
     padding-top: 40px;
     height: 500px;
@@ -709,12 +726,16 @@
     align-items: center;
     justify-content: space-around;
   }
+  .footer footer .footer-column {
+    overflow-x: inherit !important;
+  }
   .footer footer .footer-column > img {
     margin-bottom: 10px;
     width: 130px;
     margin-left: -20px;
   }
   .footer footer .footer-column ul {
+    overflow-x: inherit !important;
     list-style-type: square;
     color: #006B3F;
   }
@@ -727,6 +748,7 @@
     margin-bottom: 8px;
   }
   .footer footer .footer-column ul > h2 {
+    overflow-x: inherit !important;
     color: #555d5c;
     margin-left: -20px;
   }
@@ -784,6 +806,13 @@
   }
   .footer footer .Footer-Infos > ul > li:first-child {
     padding-left: none;
+  }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+  .Container-Vacancies .form .Form-Row {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 

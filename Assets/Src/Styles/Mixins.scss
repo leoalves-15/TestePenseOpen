@@ -1,0 +1,55 @@
+@mixin Call-To-Action($text-color, $line-height, $weight) {
+    color: $text-color;
+    font-size: 18px;
+    line-height: $line-height;
+    font-weight: $weight;
+    font-style: normal;
+}
+@mixin Call-To-Action-Descktop ($text-color, $line-height, $weight){
+    color: $text-color;
+    font-size: 40px;
+    line-height: $line-height;
+    font-weight: $weight;
+    font-style: normal;
+}
+@mixin text (){
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: $black-text;
+}
+@mixin textDesktop (){
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black-text;
+}
+@mixin buttons($radius) {
+    padding: 0px 16px;
+    width: 146px;
+    height: 48px;
+    background: $second-green;
+    border-radius: $radius ;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    font-style: normal;
+    color: white;
+}
+@mixin inputs {
+    border: 2px solid #5D615F;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 312px;
+    height: 40px;
+}
+@mixin inputsDescktop {
+    border: 2px solid #5D615F;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 400px;
+    height: 48px;
+}
