@@ -1,4 +1,11 @@
 @import 'Imports.scss';
+@media (min-width:2023px) {
+    .Contain-All{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}
 @media (min-width:1023px) {
     .Contain-All{
         .Container-Header-Mobile{
