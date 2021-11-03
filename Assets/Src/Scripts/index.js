@@ -13,3 +13,37 @@ function back(id){
 window.onload = () => {
     console.log("teste")
 } 
+function handleOpenModal() {
+    var open = document.getElementById("flag");
+    open.addEventListener("click",
+    ()=>{
+        document.getElementById("modal").classList.add('modal-open');
+        document.getElementById("modal").classList.remove('modal-closed');
+    }
+    , false);
+}
+function handleCloseModal(){
+    var close = document.getElementById("closeButton");
+    close.addEventListener("click",
+    ()=>{
+        document.getElementById("modal").classList.add('modal-closed');
+        document.getElementById("modal").classList.remove('modal-open');
+    }
+    , false);
+}
+function listenerModal(){
+    handleOpenModal();
+    handleCloseModal();
+}
+  
+var docWidth = document.documentElement.offsetWidth;
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
+
+document.addEventListener("DOMContentLoaded", listenerModal, false);

@@ -63,8 +63,46 @@ $black-text : #242625;
     width: 400px;
     height: 48px;
 }
-.modal{
+.modal-closed{
     display: none;
+}
+.modal-open{
+    padding: 32px 56px;
+    z-index: 9999;
+    background: $withe-text;
+    opacity: 0.96;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0px;
+    top: 0px;
+    .Modal-Image{
+        width: 100%;
+        display: flex;
+    }
+    .Modal-Text{
+        width: 612px;
+        h2{
+            @include Call-To-Action($black-text, 36px, 700);
+            font-size: 24px;
+        }
+        p{
+            @include text();
+        }
+    }
+    .Modal-Button{
+        width: 100%;
+        margin-right: 164px;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 56px;
+    }
 }
 .Container-All{
     width: 100vw;
@@ -79,7 +117,7 @@ $black-text : #242625;
     flex-direction: column;
 }
 .Container-Header-Mobile{
-    z-index: 9999;
+    z-index: 99;
     height: 90px;
     position: absolute;
 }
