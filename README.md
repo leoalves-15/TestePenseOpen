@@ -8,5 +8,5 @@ HTML dividido em componentes (as classes css com nomes intuitivos), imagens "com
 <h2>Estilos</h2>
 Os estilos foram divididos em mixins (cotem as fonts), colors e descktop e mobile (esses contem as estilizações correspondentes ao nome) foi utilizado o sass e para facilitar eu criei um script que é executado somente com "npm run sass" que monitora todos os estilos e permite você fazer alterações em tempo real sem rodar o "sass watch"
 <h2>Scripts</h2>
-Os scripts foram divididos em funcionalidades para facilitar a manutenção.
-obs: não foram utilizados item 2 e 3 do "você pode..."
+Os scripts foram divididos em funcionalidades para facilitar a manutenção.<br>
+obs: não foram utilizados os itens 2 e 3 do "você pode..."
