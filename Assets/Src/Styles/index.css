@@ -684,6 +684,9 @@ body {
     width: 64px;
     height: 64px;
   }
+  .footer .Container-Social ul > li:hover {
+    background-color: #006B3F;
+  }
   .footer .Container-Social ul > li > img {
     width: 34px;
     height: 34px;

@@ -258,6 +258,9 @@
                     border-radius: 50px;
                     width: 64px;
                     height: 64px;
+                    &:hover{
+                        background-color: $second-green;
+                    }
                     > img{
                         width: 34px;
                         height: 34px;
